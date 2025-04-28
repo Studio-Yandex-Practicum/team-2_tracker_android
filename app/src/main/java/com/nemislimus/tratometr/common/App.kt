@@ -9,6 +9,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class App : Application() {
 
@@ -33,8 +34,9 @@ class App : Application() {
                 isDarkMode = appComponent.getSettingsRepository().getSettings().isDarkMode
             }
             setDarkModeJob.join()
-
-            switchTheme()
+            withContext(Dispatchers.Main) {
+                switchTheme()
+            }
         }
     }
 
