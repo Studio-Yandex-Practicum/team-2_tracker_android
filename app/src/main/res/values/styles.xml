@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxBackgroundColor">?attr/appCardBackground</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/edit_text_box_background_color</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="android:fontFamily">@font/manrope_weight400_regular</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:textColorHint">?attr/appTextSecondary</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="boxStrokeErrorColor">?attr/appErrorColor</item>
+        <item name="errorTextColor">?attr/appErrorColor</item>
+        <item name="cursorErrorColor">?attr/appErrorColor</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="cursorColor">?attr/appAccentColor</item>
+    </style>
+
+    <style name="AppButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_48dp</item>
+        <item name="android:layout_marginTop">@dimen/size_16dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:insetTop">@dimen/size_0dp</item>
+        <item name="android:insetBottom">@dimen/size_0dp</item>
+        <item name="android:textColor">@color/btn_text_selector</item>
+        <item name="android:backgroundTint">@color/btn_background_selector</item>
+
+    </style>
+
+</resources>

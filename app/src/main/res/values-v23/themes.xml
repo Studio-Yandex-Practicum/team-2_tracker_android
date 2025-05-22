@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Tratometr" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="appBackgroundColor">@color/background</item>
+        <item name="appTextPrimary">@color/text_primary</item>
+        <item name="appTextSecondary">@color/text_secondary</item>
+        <item name="appDividers">@color/dividers</item>
+        <item name="appCardBackground">@color/cards</item>
+        <item name="appCardText">@color/dark_cards</item>
+        <item name="appNotActiveColor">@color/not_active</item>
+        <item name="appErrorColor">@color/error</item>
+        <item name="appAccentColor">@color/accented</item>
+        <item name="appAccentColorFade">@color/accented_fade</item>
+        <item name="appCategoryIconBackground">@color/category_ic_background</item>
+        <item name="materialTimePickerTheme">@style/ThemeOverlay.Tratometr.AppTimePicker</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.Tratometr.AppDatePicker</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.Tratometr.AppDatePicker.Fullscreen</item>
+        <item name="appButtonColor">@color/cards</item>
+
+        <item name="colorPrimary">@color/accented</item>
+        <item name="android:colorBackground">@color/background</item>
+
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_40dp</item>
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@null</item>
+        <item name="android:titleTextColor">?attr/appTextPrimary</item>
+    </style>
+
+</resources>

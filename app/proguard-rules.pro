@@ -5,17 +5,29 @@
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+#Retrofit config:
+
+-dontwarn retrofit2.**
+
+# Не трогаем библиотечные классы Retrofit
+-keep class retrofit2.** { *; }
+
+# Не трогаем все интерфейсы для Retrofit
+-keep interface retrofit2.** { *; }
+
+# Если используешь CallAdapter или Converter (у нас GsonConverterFactory)
+-keepclassmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
+# Для поддержки аннотаций HTTP (GET, POST и др.)
+-keepclasseswithmembers interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Gson
+-keepattributes *Annotation*
+-keep class com.google.gson.** { *; }
+-keep class com.nemislimus.tratometr.authorization.data.dto.** { *; }

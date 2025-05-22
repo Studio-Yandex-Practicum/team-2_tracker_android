@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_4dp"
+    android:layout_marginTop="@dimen/size_4dp"
+    android:background="@drawable/card_background_regular">
+
+    <ImageView
+        android:id="@+id/ivCategoryIcon"
+        android:layout_width="@dimen/size_32dp"
+        android:layout_height="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:layout_marginBottom="@dimen/size_8dp"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:padding="6dp"
+        app:tint="@color/cards"
+        tools:src="@drawable/ic_custom_cat_02"
+        android:background="@drawable/circle_icons"
+        tools:ignore="ContentDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCategoryName"
+        style="@style/AppTextPrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/appTextPrimary"
+        android:ellipsize="end"
+        android:singleLine="true"
+        tools:text="Категория"
+        android:layout_marginStart="@dimen/size_8dp"
+        android:layout_marginEnd="@dimen/size_16dp"
+        app:layout_constraintStart_toEndOf="@id/ivCategoryIcon"
+        app:layout_constraintTop_toTopOf="@id/ivCategoryIcon"
+        app:layout_constraintBottom_toBottomOf="@id/ivCategoryIcon"
+        app:layout_constraintEnd_toStartOf="@id/ivCategoryCheckbox"/>
+
+    <ImageView
+        android:id="@+id/ivCategoryCheckbox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/checkbox"
+        android:layout_marginEnd="@dimen/size_16dp"
+        android:layout_marginTop="@dimen/size_12dp"
+        android:layout_marginBottom="@dimen/size_12dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

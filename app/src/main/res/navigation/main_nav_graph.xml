@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_passRecoveryFragment"
+            app:destination="@id/passRecoveryFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/passRecoveryFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.PassRecoveryFragment"
+        android:label="fragment_passrecovery"
+        tools:layout="@layout/fragment_passrecovery" >
+        <action
+            android:id="@+id/action_passRecoveryFragment_to_newPassFragment"
+            app:destination="@id/newPassFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.nemislimus.tratometr.expenses.ui.fragment.ExpensesFragment"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_expenses" >
+        <action
+            android:id="@+id/action_expensesFragment_to_analyticsFragment"
+            app:destination="@id/analyticsFragment" />
+        <action
+            android:id="@+id/action_expensesFragment_to_createExpenseFragment"
+            app:destination="@id/createExpenseFragment" />
+        <action
+            android:id="@+id/action_expensesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_expensesFragment_to_selectCategoryFragment"
+            app:destination="@id/selectCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.nemislimus.tratometr.analytics.ui.fragment.AnalyticsFragment"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" >
+        <action
+            android:id="@+id/action_analyticsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createExpenseFragment"
+        android:name="com.nemislimus.tratometr.expenses.ui.fragment.CreateExpenseFragment"
+        android:label="fragment_create_expense"
+        tools:layout="@layout/fragment_create_expense" >
+        <action
+            android:id="@+id/action_createExpenseFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nemislimus.tratometr.settings.ui.fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectCategoryFragment"
+        android:name="com.nemislimus.tratometr.expenses.ui.fragment.SelectCategoryFragment"
+        android:label="fragment_select_category"
+        tools:layout="@layout/fragment_select_category" >
+        <action
+            android:id="@+id/action_selectCategoryFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createCategoryFragment"
+        android:name="com.nemislimus.tratometr.expenses.ui.fragment.CreateCategoryFragment"
+        android:label="fragment_create_category"
+        tools:layout="@layout/fragment_create_category" >
+        <argument
+            android:name="category_name"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPassFragment"
+        android:name="com.nemislimus.tratometr.authorization.ui.fragment.NewPassFragment"
+        android:label="fragment_new_pass"
+        tools:layout="@layout/fragment_new_pass" >
+        <action
+            android:id="@+id/action_newPassFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_newPassFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+    </fragment>
+
+</navigation>

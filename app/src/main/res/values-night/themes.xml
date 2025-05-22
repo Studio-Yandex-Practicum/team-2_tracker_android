@@ -1,7 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Tratometr" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+        <item name="appBackgroundColor">@color/dark_background</item>
+        <item name="appTextPrimary">@color/dark_text_primary</item>
+        <item name="appTextSecondary">@color/dark_text_secondary</item>
+        <item name="appDividers">@color/dark_dividers</item>
+        <item name="appCardBackground">@color/dark_cards</item>
+        <item name="appCardText">@color/cards</item>
+        <item name="appNotActiveColor">@color/dark_not_active</item>
+        <item name="appErrorColor">@color/dark_error</item>
+        <item name="appAccentColor">@color/dark_accented</item>
+        <item name="appAccentColorFade">@color/dark_accented_fade</item>
+        <item name="appCategoryIconBackground">@color/dark_category_ic_background</item>
+        <item name="materialTimePickerTheme">@style/ThemeOverlay.Tratometr.AppTimePicker</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.Tratometr.AppDatePicker</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.Tratometr.AppDatePicker.Fullscreen</item>
+        <item name="appButtonColor">@color/cards</item>
+
+        <item name="colorPrimary">@color/accented</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+
     </style>
+
 </resources>

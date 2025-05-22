@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/AppTextH2"
+        android:textColor="?attr/appTextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12dp"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:layout_marginBottom="10dp"
+        tools:text="Сегодня"/>
+
+</FrameLayout>

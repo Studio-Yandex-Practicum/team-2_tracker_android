@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <color name="category_ic">#FFFFFF</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="category_ic_background">#ABBAEF</color>
+    <color name="edit_icon_background">#F9AD66</color>
+    <color name="dark_category_ic_background">#6978AC</color>
+
+    <color name="background">#F2F2F7</color>
+    <color name="text_primary">#202022</color>
+    <color name="text_secondary">#6E6E73</color>
+    <color name="dividers">#D1D1D6</color>
+    <color name="cards">#FFFFFF</color>
+    <color name="not_active">#A1A1A6</color>
+    <color name="error">#D92D20</color>
+    <color name="accented">#4158DE</color>
+    <color name="accented_fade">#4D4158DE</color>
+
+    <color name="dark_background">#121212</color>
+    <color name="dark_text_primary">#F2F2F7</color>
+    <color name="dark_text_secondary">#B0B0B0</color>
+    <color name="dark_dividers">#2C2C2E</color>
+    <color name="dark_cards">#202022</color>
+    <color name="dark_not_active">#8E8E93</color>
+    <color name="dark_error">#F97066</color>
+    <color name="dark_accented">#4B61DF</color>
+    <color name="dark_accented_fade">#4D4B61DF</color>
+
+    <color name="chart_color_1">#FF6B6B</color>
+    <color name="chart_color_2">#FFB400</color>
+    <color name="chart_color_3">#5FDA91</color>
+    <color name="chart_color_4">#3498DB</color>
+    <color name="chart_color_5">#A56EFF</color>
+    <color name="chart_color_6">#FF914D</color>
+    <color name="chart_color_7">#FF5EAA</color>
+    <color name="chart_color_8_others">#738ADB</color>
+
 </resources>

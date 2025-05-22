@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="@dimen/size_16dp"
+    android:background="@drawable/card_exhense_background"
+    android:importantForAccessibility="no">
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/btn_del_background"
+        android:padding="16dp"
+        android:src="@drawable/ic_delete"
+        tools:ignore="contentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="56dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/button_text"
+        tools:ignore="contentDescription"/>
+
+</FrameLayout>

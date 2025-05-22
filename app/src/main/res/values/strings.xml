@@ -1,3 +1,131 @@
 <resources>
-    <string name="app_name">tratometr</string>
+    <string name="app_name">Tratometr</string>
+    <string name="today">Сегодня</string>
+    <string name="add_expense">Добавить расход</string>
+    <string name="edit_expense">Редактировать расход</string>
+    <string name="hint_text_category">Выбрать категорию</string>
+    <string name="amount_hints">Сумма расхода</string>
+    <string name="description">Добавьте детали о расходе\n(необязательно)</string>
+    <string name="btn_add">Добавить</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="add_category">добавить категорию</string>
+    <string name="select_date_expense">Выберите дату расхода</string>
+    <string name="category_error">Нет такой категории</string>
+    <string name="amount_error">Число 0.01 - 999 999 999 999 999</string>
+    <string name="day">День</string>
+    <string name="week">Неделя</string>
+    <string name="month">Месяц</string>
+    <string name="year">Год</string>
+    <string name="range">Период</string>
+    <string name="select_range">Выберите диапазон дат</string>
+    <string name="no_expenses">За этот период нет трат</string>
+    <string name="change_filter">Добавьте расход или измените\nпараметры фильтра.</string>
+    <string name="formatted_sum">%1$s ₽</string>
+    <string name="categories">Категории</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_toolbar_description">Покинуть экран настроек</string>
+    <string name="reminders">Напоминания</string>
+    <string name="theme">Тема</string>
+    <string name="export">Экспорт отчёта в csv</string>
+    <string name="logout">Выйти из аккаунта</string>
+    <string name="select_time">Выберите время</string>
+    <string name="notification_message">Пора внести траты за день!</string>
+    <string name="create_category">Создать категорию</string>
+    <string name="notification_permission_request">Чтобы получить доступ к напоминаниям нужно ваше разрешение!</string>
+    <string name="alarm_permission_request">Разрешите делать напоминания!</string>
+    <string name="title_of_creating_category">Название категории</string>
+    <string name="category_icon_selection">Выбор иконки</string>
+    <string name="required_field">Обязательное поле!</string>
+    <string name="category_already_exist">Такая категория уже существует!</string>
+    <string name="select_category">Выбрать категорию</string>
+    <string name="search">Поиск</string>
+    <string name="btn_apply">Применить</string>
+    <string name="btn_new_category">Новая категория</string>
+    <string name="category_list_placeholder_header">Категории отсутствуют</string>
+    <string name="category_list_placeholder_text">Добавьте новые категории расходов.\nДля этого нажмите на кнопку\n\"Новая категория\"</string>
+    <string name="authorization">Авторизация</string>
+    <string name="registration">Регистрация</string>
+    <string name="text_exit">Нажмите еще раз, чтобы выйти</string>
+
+    <string name="agreement_check">Нажимая кнопку, вы соглашаетесь с Политикой конфиденциальности и обработки персональных данных</string>
+    <string name="register">Зарегистрироваться</string>
+
+    <string name="privacy_policy">Политика конфедициальности и обработки персональных данных</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="login">Войти</string>
+    <string name="first_time_in_app">Впервые в приложении?</string>
+    <string name="create_account">Создайте аккаунт</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="agreement_first">Нажимая кнопку, вы соглашаетесь с</string>
+    <string name="agreement_second">Политикой конфедициальности и обработки персноальных данных</string>
+    <string name="privacy_policy_full_text"><![CDATA[
+<h2>1. Общие положения</h2>
+<p>Настоящая Политика конфиденциальности и обработки персональных данных (далее — «Политика») регулирует порядок сбора, использования, хранения и защиты персональных данных пользователей мобильного приложения «Tratometr» (далее — «Приложение»).</p>
+<p>Политика разработана в соответствии с законодательством Российской Федерации, включая Федеральный закон № 152-ФЗ «О персональных данных».</p>
+<p>Использование приложения означает безоговорочное согласие пользователя с условиями настоящей Политики.</p>
+
+<h2>2. Обрабатываемые персональные данные</h2>
+<p>Приложение обрабатывает минимальный объём персональных данных, необходимый для регистрации и функционирования:</p>
+<ul>
+  <li>Адрес электронной почты пользователя (используется для регистрации, аутентификации и восстановления доступа).</li>
+  <li>Финансовые данные, введённые пользователем (расходы, категории трат), которые хранятся локально на устройстве пользователя и могут экспортироваться в формате CSV по запросу.</li>
+</ul>
+
+<h2>3. Цели обработки персональных данных</h2>
+<p>Сбор и обработка персональных данных осуществляется исключительно в следующих целях:</p>
+<ul>
+  <li>Регистрация и авторизация пользователя в приложении.</li>
+  <li>Обеспечение корректной работы приложения.</li>
+  <li>Улучшение пользовательского опыта.</li>
+  <li>Предоставление пользователю возможности экспорта данных.</li>
+  <li>Обеспечение безопасности и предотвращение несанкционированного доступа.</li>
+</ul>
+
+<h2>4. Хранение и защита персональных данных</h2>
+<ul>
+  <li>Персональные данные хранятся в зашифрованном виде и передаются с использованием защищённых протоколов.</li>
+  <li>Приложение не передаёт персональные данные третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</li>
+  <li>При удалении аккаунта все связанные с ним данные удаляются без возможности восстановления.</li>
+</ul>
+
+<h2>5. Права пользователя</h2>
+<p>Пользователь имеет право:</p>
+<ul>
+  <li>Получать информацию о хранимых персональных данных.</li>
+  <li>Запрашивать их изменение или удаление.</li>
+  <li>Отозвать согласие на обработку персональных данных, что приведёт к удалению учётной записи.</li>
+  <li>Подавать жалобы в уполномоченные органы в случае нарушения его прав.</li>
+</ul>
+
+<h2>6. Использование</h2>
+<p>Приложение не использует файлы cookie или технологии слежения, за исключением необходимых для обеспечения его работоспособности механизмов.</p>
+
+<h2>7. Передача данных третьим лицам</h2>
+<p>Персональные данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством Российской Федерации, или с явного согласия пользователя.</p>
+
+<h2>8. Изменение Политики</h2>
+<p>Разработчик оставляет за собой право изменять настоящую Политику. Актуальная версия всегда доступна в приложении.</p>
+
+<h2>9. Контактная информация</h2>
+<p>По вопросам, связанным с обработкой персональных данных, пользователь может обратиться по адресу: <a href="mailto:office@spendwise.com">office@spendwise.com</a></p>
+<p><b>Дата последнего обновления:</b> 31.03.2025</p>
+]]></string>
+    <string name="recover_password">Восстановить пароль</string>
+    <string name="recovery_text">Введите адрес, указаный при регистрации. На него придет код восстановления</string>
+    <string name="send">Отправить</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="return_to_auth">Вернуться на экран авторизации</string>
+    <string name="success">Успешно</string>
+    <string name="new_pass_is_set">Новый пароль установлен(нет)</string>
+
+    <string name="sort">Сортировать</string>
+    <string name="category_other">Остальные</string>
+    <string name="unknown_viewholder_create">Unknown ViewHolder type for create</string>
+    <string name="unknown_viewholder_bind">Unknown ViewHolder type for bind</string>
+    <string name="csv_header">Дата;Категория;Сумма\n</string>
+    <string name="csv_name_last_part">_расходы.csv</string>
+    <string name="btn_all_categories">Все категории</string>
 </resources>
